@@ -18,7 +18,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(MyAllowSpecificOrigins,
         policy =>
         {
-            policy.WithOrigins("http://localhost:4200")
+            policy.WithOrigins("https://partnersplatform-dev.who.int")
                 .AllowAnyHeader()
                 .AllowAnyMethod();
         });
